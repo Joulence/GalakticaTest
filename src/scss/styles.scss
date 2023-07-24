@@ -1,21 +1,24 @@
-@import './base/variables';
-@import './base/mixins';
-@import './base/fonts';
+@import "./base/variables";
+@import "./base/mixins";
+@import "./base/fonts";
 
+@import "./blocks/header";
 
 * {
-    padding: 0;
-    box-sizing: border-box;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    color: #fff;
-    font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #585858;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 h1,
@@ -24,23 +27,31 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
+  margin: 0;
 }
 
 h1 {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .container {
-    max-width: 1290px;
+  //   max-width: 1290px;
+  max-width: 89.5%;
+  margin: 0 auto;
 }
 
 a {
-    color: #212121;
-    text-decoration: none;
+  color: #212121;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
-    margin: 0;
+  list-style: none;
+  margin: 0;
 }
+
+/* @media (max-width: 1290px) {
+  .container {
+    max-width: 90%;
+  }
+} */

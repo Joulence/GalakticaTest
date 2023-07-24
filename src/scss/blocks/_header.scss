@@ -1,0 +1,32 @@
+@import "../base/variables";
+
+.header {
+  padding: 24px 0;
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__links {
+      align-items: center;
+      display: flex;
+      gap: 64px;
+      ul {
+        display: flex;
+        gap: 46px;
+        li {
+          &:hover {
+            a {
+              color: $golden;
+            }
+          }
+          a {
+            transition: all .1s ease-in-out;
+          }
+        }
+      }
+    }
+    &__button {
+      @include button($colorPurple: true);
+    }
+  }
+}
