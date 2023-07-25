@@ -22,9 +22,6 @@
         }
       }
     }
-    &__border {
-      @include border();
-    }
   }
   &-run {
     @include run();

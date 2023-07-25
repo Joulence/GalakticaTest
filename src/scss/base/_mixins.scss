@@ -67,15 +67,6 @@
   display: flex;
 }
 
-@mixin border() {
-  width: 294px;
-  height: 12px;
-  background: #e9a923;
-  position: absolute;
-  bottom: 6px;
-  border-radius: 21px;
-}
-
 @mixin run() {
   overflow: hidden;
   width: 100%;
