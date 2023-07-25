@@ -1,0 +1,32 @@
+.traffic {
+  background: $cream;
+  &-inner {
+    @include flexCenter();
+    justify-content: space-between;
+    &__info {
+      .traffic__info {
+        &-title {
+          position: relative;
+          h2 {
+            font-size: 44px;
+            max-width: 558px;
+            color: #313131;
+            text-transform: capitalize;
+            position: relative;
+            z-index: 1;
+          }
+        }
+        &-text {
+          max-width: 558px;
+          margin-top: 28px;
+        }
+      }
+    }
+    &__border {
+      @include border();
+    }
+  }
+  &-run {
+    @include run();
+  }
+}

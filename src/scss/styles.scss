@@ -3,6 +3,7 @@
 @import "./base/fonts";
 
 @import "./blocks/header";
+@import "./blocks/traffic";
 
 * {
   padding: 0;
@@ -19,6 +20,7 @@ body {
   color: #585858;
   font-size: 16px;
   font-weight: 600;
+  overflow: hidden;
 }
 
 h1,
@@ -28,6 +30,8 @@ h4,
 h5,
 h6 {
   margin: 0;
+  font-family: "Exo", sans-serif;
+  font-weight: 700;
 }
 
 h1 {

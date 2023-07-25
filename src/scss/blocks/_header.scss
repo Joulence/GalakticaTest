@@ -1,14 +1,13 @@
 @import "../base/variables";
 
 .header {
+  background: $cream;
   padding: 24px 0;
   &-inner {
-    display: flex;
+    @include flexCenter();
     justify-content: space-between;
-    align-items: center;
     &__links {
-      align-items: center;
-      display: flex;
+      @include flexCenter();
       gap: 64px;
       ul {
         display: flex;
@@ -20,7 +19,7 @@
             }
           }
           a {
-            transition: all .1s ease-in-out;
+            transition: all 0.1s ease-in-out;
           }
         }
       }

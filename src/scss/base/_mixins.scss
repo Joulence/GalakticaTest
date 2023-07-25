@@ -55,9 +55,106 @@
       background: #fff;
     }
     &:hover {
-        a {
-            color: #7f3a6a;
-        }
+      a {
+        color: #7f3a6a;
+      }
+    }
+  }
+}
+
+@mixin flexCenter() {
+  align-items: center;
+  display: flex;
+}
+
+@mixin border() {
+  width: 294px;
+  height: 12px;
+  background: #e9a923;
+  position: absolute;
+  bottom: 6px;
+  border-radius: 21px;
+}
+
+@mixin run() {
+  overflow: hidden;
+  width: 100%;
+  height: 188px;
+  position: relative;
+
+  .marquee {
+    font-family: "Exo", sans-serif;
+    left: 5px;
+    font-size: 24px;
+    font-weight: 700;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #fff;
+    width: calc(100% + 30px);
+    margin-left: -10px;
+    top: 50%;
+
+    margin-top: -30px;
+
+    &.purple {
+      background: #7f3a6a;
+      transform: rotate(5deg);
+      z-index: 2;
+      .marquee--inner {
+        animation: marqueePurple 10s linear infinite;
+      }
+    }
+
+    &.golden {
+      background: #e9a923;
+      transform: rotate(-5deg);
+      z-index: 1;
+      top: 70px;
+      .marquee--inner {
+        animation: marqueeGolden 10s linear infinite;
+      }
+    }
+  }
+
+  .marquee--inner {
+    display: flex;
+    gap: 40px;
+    width: 200%;
+    position: absolute;
+  }
+
+  span {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    div {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+    }
+  }
+
+  @keyframes marqueePurple {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -100%;
+    }
+  }
+
+  @keyframes marqueeGolden {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 0;
     }
   }
 }
