@@ -28,7 +28,7 @@
     opacity: 0;
     line-height: 40px;
     border-radius: 50%;
-    background: #e9a923;
+    background: $golden;
     position: absolute;
     transition: all 0.5s ease-Out;
     top: 20px;
@@ -45,18 +45,18 @@
     }
   }
   @if $colorPurple {
-    background: #7f3a6a;
+    background: $purple;
     #circle {
-      background: #e9a923;
+      background: $golden;
     }
   } @else {
-    background: #e9a923;
+    background: $golden;
     #circle {
       background: #fff;
     }
     &:hover {
       a {
-        color: #7f3a6a;
+        color: $purple;
       }
     }
   }
