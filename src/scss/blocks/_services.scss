@@ -7,8 +7,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    &__info {
-    }
     &__lists {
       display: flex;
       gap: 24px;
@@ -34,14 +32,14 @@
         display: flex;
       }
       &.list-purple {
-        background: #7f3a6a;
+        background: $purple;
         ul {
           flex-direction: column;
           gap: 24px;
         }
       }
       &.list-golden {
-        background: #e9a923;
+        background: $golden;
         ul {
           justify-content: space-between;
         }
