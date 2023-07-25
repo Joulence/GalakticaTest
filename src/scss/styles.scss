@@ -5,6 +5,7 @@
 @import "./blocks/header";
 @import "./blocks/traffic";
 @import "./blocks/partners";
+@import "./blocks/about";
 
 * {
   padding: 0;
@@ -36,6 +37,15 @@ h6 {
 
 h1 {
   font-weight: 600;
+}
+
+h2 {
+  color: #313131;
+  font-family: "Exo", sans-serif;
+  font-size: 32px;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 2;
 }
 
 .container {
