@@ -74,6 +74,8 @@ ul {
   position: absolute;
   bottom: 6px;
   border-radius: 21px;
+  transition: all 1s linear;
+  z-index: 0;
 }
 
 /* @media (max-width: 1290px) {

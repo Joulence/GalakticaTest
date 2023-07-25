@@ -3,20 +3,17 @@
   padding: 64px 0 96px;
   &-inner {
     h2 {
+      font-size: 44px;
       color: #fff;
       margin-bottom: 16px;
     }
-    div {
+    .choose-text {
       font-weight: 400;
       margin-bottom: 32px;
     }
-    span {
+    .choose-word {
       position: relative;
       z-index: 2;
-    }
-    .border {
-      position: absolute;
-      z-index: 1;
     }
     color: #fff;
     background: $purple;
@@ -25,6 +22,26 @@
     &__button {
       @include button($colorPurple: false);
       max-width: 170px;
+    }
+  }
+
+  .border-fr {
+    left: calc(28% - 1px);
+    bottom: 5;
+    width: 0px;
+  }
+
+  .border-sc {
+    left: calc(64% - 2px);
+    width: 0px;
+  }
+  &:hover {
+    .border-fr {
+      width: 235px;
+    }
+
+    .border-sc {
+      width: 250px;
     }
   }
 }

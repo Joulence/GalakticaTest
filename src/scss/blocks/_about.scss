@@ -12,7 +12,7 @@
       flex-wrap: wrap;
     }
     &__text {
-        max-width: 485px;
+      max-width: 485px;
       h3 {
         font-size: 24px;
         color: #313131;
@@ -22,6 +22,15 @@
         font-size: 16px;
         font-weight: 400;
       }
+    }
+  }
+  .border {
+    width: 0px;
+    left: calc(44% - 3px);
+  }
+  &:hover {
+    .border {
+      width: 142px;
     }
   }
 }

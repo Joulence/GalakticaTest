@@ -8,18 +8,13 @@
     text-align: center;
     position: relative;
     z-index: 1;
-    margin-bottom: 40px
+    margin-bottom: 40px;
   }
   &-inner {
     @include flexCenter();
     justify-content: space-between;
     &__title {
-        position: relative;
-        .border {
-            left: 28%;
-            width: 0px;
-            transition: all 1s linear;
-        }
+      position: relative;
     }
     &__companies {
       display: flex;
@@ -39,9 +34,13 @@
       padding: 37px 36px;
     }
   }
+  .border {
+    left: 24%;
+    width: 0px;
+  }
   &:hover {
     .border {
-        width: 344px;
+      width: 344px;
     }
   }
 }
