@@ -1,0 +1,30 @@
+.choose {
+  text-align: center;
+  padding: 64px 0 96px;
+  &-inner {
+    h2 {
+      color: #fff;
+      margin-bottom: 16px;
+    }
+    div {
+      font-weight: 400;
+      margin-bottom: 32px;
+    }
+    span {
+      position: relative;
+      z-index: 2;
+    }
+    .border {
+      position: absolute;
+      z-index: 1;
+    }
+    color: #fff;
+    background: $purple;
+    padding: 64px 0px;
+    border-radius: 15px;
+    &__button {
+      @include button($colorPurple: false);
+      max-width: 170px;
+    }
+  }
+}
