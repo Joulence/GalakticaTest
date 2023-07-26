@@ -7,6 +7,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    &__img {
+      img {
+        width: 100%;
+      }
+    }
     &__lists {
       display: flex;
       gap: 24px;
@@ -52,6 +57,82 @@
   &:hover {
     .border {
       width: 131px;
+    }
+  }
+}
+
+@media (max-width: 1140px) {
+  .services {
+    text-align: center;
+
+    .border {
+      left: 38%;
+    }
+    &-inner {
+      flex-direction: column;
+      justify-content: center;
+      &__lists {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .services {
+    &-inner {
+      &__info {
+        width: 100%;
+      }
+      &__lists {
+        flex-direction: column;
+      }
+      &__list {
+        &.list-purple {
+          width: 100%;
+        }
+        &.list-golden {
+          max-width: 267px;
+          width: 100%;
+        }
+      }
+      &__group {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+@media (max-width: 495px) {
+  .services {
+    &:hover {
+      .border {
+        width: 99px;
+      }
+    }
+    .border {
+      left: 38%;
+      bottom: 0;
+    }
+    h2 {
+      font-size: 24px;
+    }
+    h3 {
+      font-size: 18px;
+    }
+    &-inner {
+      ul {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .services {
+    .border {
+      left: 35%;
     }
   }
 }

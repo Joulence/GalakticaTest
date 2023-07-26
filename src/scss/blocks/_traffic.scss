@@ -3,6 +3,12 @@
   &-inner {
     @include flexCenter();
     justify-content: space-between;
+    flex-wrap: wrap;
+    &__photo {
+      img {
+        width: 100%;
+      }
+    }
     &__info {
       .traffic__info {
         &-title {
@@ -25,5 +31,85 @@
   }
   &-run {
     @include run();
+  }
+}
+
+@media (max-width: 1350px) {
+  .traffic {
+    &-run {
+      .marquee {
+        width: 137%;
+        position: relative;
+        &.purple {
+          top: 140px;
+        }
+        &.golden {
+          top: 90px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1140px) {
+  .traffic {
+    &-inner {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 605px) {
+  .traffic {
+    .border {
+      left: 100px;
+    }
+  }
+}
+
+@media (max-width: 505px) {
+  .traffic {
+    .border {
+      left: 160px;
+    }
+  }
+}
+
+@media (max-width: 505px) {
+  .traffic {
+    .border {
+      width: 186px;
+      bottom: -2px;
+      left: 0;
+    }
+  }
+}
+
+@media (max-width: 495px) {
+  .traffic {
+    &-inner {
+      &__info {
+        .traffic__info {
+          &-title {
+            h2 {
+              font-size: 28px;
+            }
+          }
+        }
+      }
+    }
+    &-run {
+      .marquee {
+        font-size: 16px;
+        &--inner {
+          gap: 30px;
+        }
+        img {
+          width: 125px;
+          height: 31px;
+        }
+      }
+    }
   }
 }

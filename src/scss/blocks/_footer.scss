@@ -57,3 +57,19 @@
     }
   }
 }
+
+@media (max-width: 630px) {
+  .footer {
+    &-links {
+      ul {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media (max-width: 495px) {
+  .footer {
+    font-size: 14px;
+  }
+}

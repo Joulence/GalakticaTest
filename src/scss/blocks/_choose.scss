@@ -26,13 +26,12 @@
   }
 
   .border-fr {
-    left: calc(28% - 1px);
-    bottom: 5;
+    left: calc(33% - 4px);
     width: 0px;
   }
 
   .border-sc {
-    left: calc(64% - 2px);
+    left: calc(61% - 2px);
     width: 0px;
   }
   &:hover {
@@ -42,6 +41,114 @@
 
     .border-sc {
       width: 250px;
+    }
+  }
+}
+
+@media (max-width: 1475px) {
+  .choose {
+    .border-fr {
+      left: calc(31% - 5px);
+    }
+
+    .border-sc {
+      left: 63%;
+    }
+  }
+}
+
+@media (max-width: 1275px) {
+  .choose {
+    .border-fr {
+      left: 26%;
+    }
+
+    .border-sc {
+      left: 63%;
+    }
+  }
+}
+
+@media (max-width: 898px) {
+  .choose {
+    &-inner {
+      padding: 44px 0;
+    }
+    .border-fr {
+      bottom: 65px;
+    }
+
+    .border-sc {
+      left: 29%;
+    }
+  }
+}
+
+@media (max-width: 708px) {
+  .choose {
+    .border-fr {
+      left: 39%;
+    }
+
+    .border-sc {
+      left: 38%;
+    }
+  }
+}
+
+@media (max-width: 552px) {
+  .choose {
+    .border-fr {
+      bottom: 124px;
+    }
+
+    .border-sc {
+      left: 18%;
+    }
+  }
+}
+
+@media (max-width: 532px) {
+  .choose {
+    .border-fr {
+      left: 20%;
+    }
+  }
+}
+
+@media (max-width: 495px) {
+  .choose {
+    &:hover {
+      .border-fr {
+        width: 144px;
+      }
+      .border-sc {
+        width: 153px;
+      }
+    }
+    h2 {
+      font-size: 28px;
+    }
+
+    .border-fr {
+      bottom: 40px;
+      left: 28%;
+    }
+
+    .border-sc {
+      left: 27%;
+    }
+  }
+}
+
+@media (max-width: 487px) {
+  .choose {
+    .border-fr {
+      left: 43%;
+    }
+
+    .border-sc {
+      left: 41%;
     }
   }
 }

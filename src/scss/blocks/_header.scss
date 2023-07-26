@@ -26,4 +26,94 @@
       @include button($colorPurple: true);
     }
   }
+  &-menu {
+    display: none;
+    outline: none;
+    border: none;
+    background: transparent;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    transition: transform 0.35s 0.25s ease;
+    -webkit-transition: transform 0.35s 0.25s ease;
+    -moz-transition: transform 0.35s 0.25s ease;
+    .bar {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 15px;
+      width: 100%;
+      height: 2px;
+      background: $purple;
+      transition: all 0.35s cubic-bezier(0, 0.54, 0.61, 0.98);
+      -webkit-transition: all 0.35s cubic-bezier(0, 0.54, 0.61, 0.98);
+      -moz-transition: all 0.35s cubic-bezier(0, 0.54, 0.61, 0.98);
+      &:nth-child(1) {
+        top: 5px;
+      }
+      &:nth-child(2) {
+        top: 15px;
+      }
+      &:nth-child(3) {
+        top: 25px;
+      }
+    }
+
+    &.is-open {
+      .bar:nth-child(1) {
+        top: 15px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+      }
+      .bar:nth-child(2) {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+      }
+      .bar:nth-child(3) {
+        top: 15px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+@media (max-width: 996px) {
+  .header {
+    &-menu {
+      display: block;
+    }
+    nav {
+      position: fixed;
+      z-index: 3;
+      width: 100%;
+      height: 0%;
+      top: 100px;
+      left: 0;
+      background: #fff;
+      overflow: hidden;
+      visibility: hidden;
+      transition: all .3s ease-in-out;
+      &.nav-open {
+        visibility: visible;
+        height: 100%;
+      }
+    }
+    &-inner {
+      &__links {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+        padding: 100px 102px 175px 102px;
+        ul {
+          flex-direction: column;
+          gap: 40px;
+        }
+      }
+    }
+  }
 }

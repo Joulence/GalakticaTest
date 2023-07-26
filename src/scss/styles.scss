@@ -52,7 +52,6 @@ h2 {
 }
 
 .container {
-  //   max-width: 1290px;
   max-width: 89.5%;
   margin: 0 auto;
 }
@@ -74,12 +73,12 @@ ul {
   position: absolute;
   bottom: 6px;
   border-radius: 21px;
-  transition: all 1s linear;
+  // transition: all 1s linear;
   z-index: 0;
 }
 
-/* @media (max-width: 1290px) {
-  .container {
-    max-width: 90%;
+@media (max-width: 495px) {
+  .border {
+    height: 10px;
   }
-} */
+}

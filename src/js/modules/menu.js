@@ -1,24 +1,15 @@
-export function onclick() {
-    let hamMenu = document.getElementById("hamMenu");
-    let navMenu = document.getElementById("nav")
-    hamMenu.addEventListener("click", btnPressed);
-    hamMenu.addEventListener("click", showMenu);
+export const onclick = () => {
+  const menuBtn = document.getElementById("menuToggle");
+  const menuList = document.getElementById("menu");
 
-    function btnPressed() {
-        let isHavMenu = (hamMenu.classList.length > 1) ?
-        hamMenu.classList.remove("is-open") :
-        hamMenu.classList.add("is-open");
-        return isHavMenu;
-      }
+  menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("is-open");
+    menuList.classList.toggle("nav-open");
 
-      function showMenu() {
-        let x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-          navMenu.style.background = "";
-        } else {
-          x.style.display = "block";
-          navMenu.style.background = "#fff";
-        }
-      }
-}
+    if (menuBtn.classList.contains("is-open")) {
+      document.querySelector("body").style.overflow = "hidden";
+    } else {
+      document.querySelector("body").style.overflow = "auto";
+    }
+  });
+};

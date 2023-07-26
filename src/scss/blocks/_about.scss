@@ -26,11 +26,70 @@
   }
   .border {
     width: 0px;
-    left: calc(44% - 3px);
+    left: 45%;
   }
   &:hover {
     .border {
       width: 142px;
+    }
+  }
+}
+
+@media (max-width: 1360px) {
+  .about {
+    .border {
+      left: 43%;
+    }
+  }
+}
+
+@media (max-width: 1140px) {
+  .about {
+    &-inner {
+      &__info {
+        justify-content: center;
+        gap: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1040px) {
+  .about {
+    .border {
+      left: 40%;
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  .about {
+    .border {
+      left: 35%;
+    }
+  }
+}
+
+@media (max-width: 495px) {
+  .about {
+    &:hover {
+      .border {
+        width: 108px;
+      }
+    }
+    h2 {
+      font-size: 24px;
+    }
+    h3 {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .about {
+    .border {
+      left: 32%;
     }
   }
 }
