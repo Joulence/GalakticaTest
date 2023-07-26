@@ -98,7 +98,7 @@
       transform: rotate(5deg);
       z-index: 2;
       .marquee--inner {
-        animation: marqueePurple 10s linear infinite;
+        animation: marqueePurple 10s ease infinite;
       }
     }
 
@@ -108,7 +108,7 @@
       z-index: 1;
       top: 70px;
       .marquee--inner {
-        animation: marqueeGolden 10s linear infinite;
+        animation: marqueeGolden 10s ease infinite;
       }
     }
   }
