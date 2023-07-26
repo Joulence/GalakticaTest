@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project is a test work submission for [Galaktica]. It demonstrates my proficiency in using CSS animations, SCSS, Gulp, HTML, and JavaScript to create a web-based application or website.
+This project is a test work submission for Galaktica. It demonstrates my proficiency in using CSS animations, SCSS, Gulp, HTML, and JavaScript to create a web-based application or website.
 
 ## Technologies Used
 
@@ -91,5 +91,5 @@ To get the project up and running on your local machine, follow these steps:
 
 If you have any questions or need further information, feel free to contact me at:
 
-- Name: [Vitalii]
-- Email: [4erviken@gmail.com]
+- Vitalii
+- 4erviken@gmail.com
